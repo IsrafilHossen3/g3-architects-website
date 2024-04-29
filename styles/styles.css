@@ -1,1 +1,111 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Common Shared Styles */
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-primary {
+  background-color: #ff900e;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 0;
+  cursor: pointer;
+}
+
+/* header */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+  padding: 50px 130px;
+}
+
+.logo {
+  font-size: 2.8rem;
+  color: #131313;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* original padding */
+  /* padding: 30px 240px;  */
+
+  /* preference for my device */
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav > ul li {
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+nav > ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #424242;
+  font-weight: 500;
+}
+
+/* banner */
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 7.25rem;
+}
+
+.banner-title {
+  color: #131313;
+  font-size: 4rem;
+  margin-bottom: 1.9rem;
+}
+
+.banner-description {
+  font-size: 1.1rem;
+  color: #727272;
+  margin-bottom: 2rem;
+}
+
+.banner-img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* media queries */
+
+/* small devices */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav,
+  nav > ul {
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 1rem;
+  }
+}
+
+/* medium devices (table) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 1rem;
+  }
+}
